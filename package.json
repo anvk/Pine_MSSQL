@@ -1,0 +1,31 @@
+{
+  "name": "Pine_MSSQL",
+  "version": "0.1.0",
+  "description": "Project based on Pine.js project. It is a developer friendly and easy to use boilerplate for creating RESTful webservices using Node.JS + MSSQL Database.",
+  "contributors": [
+    {
+      "name": "Alexey Novak",
+      "email": "alexey.novak.mail@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:anvk/Pine_MSSQL.git"
+  },
+  "keywords": [
+    "web",
+    "js",
+    "webservice",
+    "rest",
+    "mssql"
+  ],
+  "dependencies": {
+    "lodash-node": "2.3.x",
+    "express":  "3.4.x",
+    "node.extend": "1.0.x",
+    "mssql": "0.4.x"
+  },
+  "engine": "node >= 0.10.x",
+  "main": "main",
+  "license": "MIT"
+}
