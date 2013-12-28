@@ -25,19 +25,19 @@ Navigate to [http://localhost:3000](http://localhost:3000) to see your running w
 
 Same as [Pine.js options](https://github.com/anvk/Pine#options)
 
-**routes** - array of route objects. Please refer to the documentation below for further details.
-**port** - port where for the web service
-**verbose** - there will extra logging messages printed if true
-**processRequest** - callback which will be executed for every web service request. Please refer to the documentation below for further details.
+**routes** - array of route objects. Please refer to the documentation below for further details.  
+**port** - port where for the web service  
+**verbose** - there will extra logging messages printed if true  
+**processRequest** - callback which will be executed for every web service request. Please refer to the documentation below for further details.  
 
 #### Route object
 
 > Object which sets route rules(URLs) for the web service. Its properties are described below. NOTE: extra properties could be specified and accessed through _params.route_ in _proccessRequest()_ callback
 
-**url** - url for a route
-**method** - GET/POST/PUT/PATCH/DELETE. NOTE: by default method will be set to GET for a route
-**storProcName** - name of the stored procedure which will be executed on the server. NOTE: all values resolved in _argMap_ will be passed as input parameters into the stored procedure.
-**argMap** - an object which contains mapping for arguments which were passed in URL, Body or Query URL.
+**url** - url for a route  
+**method** - GET/POST/PUT/PATCH/DELETE. NOTE: by default method will be set to GET for a route  
+**storProcName** - name of the stored procedure which will be executed on the server. NOTE: all values resolved in _argMap_ will be passed as input parameters into the stored procedure.  
+**argMap** - an object which contains mapping for arguments which were passed in URL, Body or Query URL.  
 
 #### Route example
 
@@ -60,10 +60,10 @@ Same as [Pine.js processRequest()](https://github.com/anvk/Pine#processrequestpa
 
 > Callback for every route which got executed. Params consist of the following objects:
 
-**args** - object which contains resolved variables from route's argMap
-**res** - Express response object. NOTE: you need to call _res.send(data)_ within your _processRequest()_ callback to send JSON back to a client.
-**req** - Express request object.
-**route** - Route object which got executed. NOTE: all extra properties will be in this object
+**args** - object which contains resolved variables from route's argMap  
+**res** - Express response object. NOTE: you need to call _res.send(data)_ within your _processRequest()_ callback to send JSON back to a client.  
+**req** - Express request object.  
+**route** - Route object which got executed. NOTE: all extra properties will be in this object  
 
 ### Widget default options
 
