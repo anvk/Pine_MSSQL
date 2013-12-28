@@ -1,1 +1,3 @@
-require('./lib/my_webservice');
+/*global require*/
+
+require('./lib/pine_mssql');
